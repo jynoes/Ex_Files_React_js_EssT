@@ -24,7 +24,7 @@ function App() {
     <div>
       <List data={tahoe_peaks} renderEmpty={<p>This list is empty!</p>} renderItem={(item) => (
         <>
-          {/* {item.name} - {item.elevation} ft. */}
+          {item.name} - {item.elevation} ft.
         </>
       )}/>
     </div>
