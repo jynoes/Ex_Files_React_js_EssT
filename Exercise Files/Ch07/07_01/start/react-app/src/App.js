@@ -7,31 +7,11 @@ const tahoe_peaks = [
   { name: "Tallac", elevation: 9735 }
 ];
 
-function List({ data, renderItem, renderEmpty }) {
-  return !data.length ? (
-    renderEmpty
-  ) : (
-    <ul>
-      {data.map((item) => (
-        <li key={item.name}>
-          {renderItem(item)}
-        </li>
-      ))}
-    </ul>
-  );
-}
+
 
 function App() {
   return (
-    <List
-      data={tahoe_peaks}
-      renderEmpty={<p>This list is empty</p>}
-      renderItem={(item) => (
-        <>
-          {item.name} - {item.elevation} ft.
-        </>
-      )}
-    />
+    <h1>App</h1>
   );
 }
 
