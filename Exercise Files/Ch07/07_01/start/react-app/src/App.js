@@ -1,18 +1,31 @@
 import "./App.css";
 
-const tahoe_peaks = [
-  { name: "Freel", elevation: 10891 },
-  { name: "Monument", elevation: 10067 },
-  { name: "Pyramid", elevation: 9983 },
-  { name: "Tallac", elevation: 9735 }
-];
+function Home() {
+  return (
+    <div>
+      <h1>My Website</h1>
+    </div>
+  )
+}
 
+function About() {
+  return (
+    <div>
+      <h1>About Us</h1>
+    </div>
+  )
+}
 
+function Contact() {
+  return (
+    <div>
+      <h1>Contact Us</h1>
+    </div>
+  )
+}
 
 function App() {
-  return (
-    // <h1>App</h1>
-  );
+  return <Home />
 }
 
 export default App;
